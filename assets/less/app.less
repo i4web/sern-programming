@@ -1,0 +1,305 @@
+/*!
+ * Roots 6.5.2
+ */
+
+@import "bootstrap/bootstrap.less";
+
+/*Store the Project's color palette variables here. Use project-{color} naming convention */
+@project-dark-blue:		#001833;			
+@project-medium-blue:		#002643;
+@project-light-blue:		#7BB4D9;
+@project-orange:			#ea9400;
+@project-grey:				#ebeff1;
+
+/* Project Specific Font Family */
+@project-font-main: 	 "Helvetica Neue", Helvetica, Arial, sans-serif;
+@project-font-headings: inherit;
+@project-font-size-base:	14px;
+
+
+// Custom Mixins
+// REM Font Sizing
+.font-size(@sizeValue) {
+  @remValue: @sizeValue;
+  @pxValue: (@sizeValue * 10);
+  font-size: ~"@{pxValue}px"; 
+  font-size: ~"@{remValue}rem";
+}
+	 
+
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+body,html { height: 100%; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+.text-orange{	color: @project-orange;}
+
+/* ==========================================================================
+   Navbar Styling
+   ========================================================================== */
+.navbar{ 
+  border: none !important;
+  margin-bottom: 0px !important;
+  
+}
+
+.navbar-default{ background-color: @project-medium-blue; }
+
+.navbar-nav { float: right; }
+   
+.navbar-default .navbar-brand {
+  color: #FFF;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #FFF;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
+  background-color: inherit;
+  
+  color: #FFFFFF;	
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+  color: @project-orange;
+}
+
+.navbar-nav>.active>a:before,
+.navbar-nav>.active>a:after{
+  color: @project-orange;	
+}
+
+.navbar-nav>.active>a:before {
+  content: '{';
+  margin-right: 5px;
+}
+
+.navbar-nav>.active>a:after {
+  content: '}';
+  margin-left: 5px;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus{
+  color: @project-orange;	
+}
+
+/* ==========================================================================
+   Mobile Nav
+   ========================================================================== */
+.navbar-default .navbar-toggle{
+  width: 25%;
+  border: 0px !important;
+  background-color: @project-orange;
+  border-radius: 0px;
+  height: 50px;
+  float: right;	
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+  background-color: @project-dark-blue;	
+}
+
+.navbar-toggle{
+  margin: 0px;	
+}
+
+.navbar-toggle .icon-bar{
+  width: 42px;
+  height: 3px;	
+  margin: 0 auto;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #FFF;	
+}
+
+.navbar-collapse{
+  background-color: @project-dark-blue;  
+  border-top: none;
+  float:none;
+  text-align: center;	
+}
+
+.navbar-nav{	
+  text-align: center;	
+  float: none;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+.header-wrap, .header-overlay, .header-img{ height: 100%; }
+
+.header-wrap{
+  min-width: 100%;
+}
+
+.header-img { 
+  background-image: url('../img/sern-main-img.jpg');
+  height: 100%;
+  background-size: auto 100%;
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+
+.header-overlay{
+  background-color: rgba(0,0,0,0.6);	
+}
+
+.header-copy{
+  bottom: 25%;
+  color: #FFF;
+  .font-size(2);
+  position: absolute;	
+  text-align: center;
+  width: 100%;
+}
+
+.header-copy .text-large{
+  .font-size(3);
+}
+
+.header-scroll-wrap{
+  background-color: rgba(255,255,255,0.7);
+  .font-size(2);
+  height: 125px;
+  margin: 0 auto;
+  margin-top: 10%;	
+  width: 125px;
+
+}
+
+.header-scroll {
+  background-color: @project-medium-blue;
+  display: inline-block;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 13px;
+  width: 100px;  
+}
+
+.header-scroll a{
+  color: #FFF;
+  display: block; 
+  height: 100px;
+  padding-top: 25px;
+  text-decoration: none;   
+  width: 100px;
+}
+
+.header-scroll-btn:after {
+  color: @project-orange;
+  content: "\e114";
+  display: block;
+  font-family: 'Glyphicons Halflings';
+}
+
+
+
+
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+.content { }
+
+
+
+/* ==========================================================================
+   Primary Content
+   ========================================================================== */
+
+.main { }
+
+/* Gallery Shortcode */
+.gallery-row { padding: 15px 0; }
+
+
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+.sidebar { }
+
+
+
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+
+.hentry header { }
+.hentry time { }
+.hentry .byline { }
+.hentry .entry-content { }
+.hentry footer { }
+
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.content-info { }
+
+
+
+/* ==========================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { float: left; }
+.alignright { float: right; }
+figure.alignnone { margin-left: 0; margin-right: 0; }
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (min-width: @screen-sm-min) {
+.header-copy{
+  bottom: 10%;
+  .font-size(2.5);	
+}
+.header-copy .text-large{
+  .font-size(6.5);
+}	
+}
+
+@media (min-width: @screen-md-min) {
+
+.header-img { 
+  background-size: 100%;
+}
+
+.navbar-collapse{
+  background-color: @project-medium-blue;  
+}
+
+.navbar-nav{	
+  text-align: center;	
+  float: right;
+}
+
+.header-copy{
+  bottom: 0%;	
+  .font-size(3.3);	
+}
+.header-copy .text-large{
+  .font-size(8.5);
+}	
+
+	
+}
+
+@media (min-width: @screen-lg-min) { }
