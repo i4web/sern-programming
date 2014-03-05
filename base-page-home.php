@@ -18,6 +18,10 @@
   ?>
    
    <?php get_template_part('templates/home-header'); //Display the Header for the home page ?> 
+   <?php get_template_part('templates/home-strengths'); //Display the Strengths area ?> 
+   <?php get_template_part('templates/home-widgets'); //Display the Home Page Widgets ?>
+   
+
 
   <div class="wrap container" role="document">
     <div class="content row">

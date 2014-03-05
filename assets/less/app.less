@@ -33,10 +33,23 @@
    ========================================================================== */
 body,html { height: 100%; }
 
+.grey-bg { background-color: @project-grey; }
+
 /* ==========================================================================
    Typography
    ========================================================================== */
+h1,h2,h3,h4,h5,h6{ color: @project-orange; }   
+   
 .text-orange{	color: @project-orange;}
+
+/* ==========================================================================
+   Custom Buttons
+   ========================================================================== */
+.btn-blue{
+  background-color: @project-medium-blue;
+  border-color: @project-dark-blue;	
+  color: #FFF;
+}
 
 /* ==========================================================================
    Navbar Styling
@@ -199,9 +212,44 @@ body,html { height: 100%; }
   font-family: 'Glyphicons Halflings';
 }
 
+/* ==========================================================================
+   Home Page - Widgets and Strengths Area
+   ========================================================================== */
 
+.sern-widget-area,
+.sern-strengths-area{
+  padding: 50px;	
+}
 
+.sern-widget-wrapper,
+.sern-strengths-area{
+  padding-top: 30px;
+}
 
+.sern-widget{
+  background-color: @project-grey;
+  min-height: 300px;
+}
+.sern-widget-header{
+  background-color: @project-medium-blue;	
+  padding: 5px 0 5px 20px;
+  width: 100%;
+}
+
+.sern-widget-header h4{
+  color: #FFF;	
+  font-weight: 300;
+}
+
+.sern-widget-content{
+  background-color: #FFF;
+  min-height: 230px;
+  margin: 8px 8px 0 8px;	
+}
+
+.strengths-cta-wrap{
+  padding-top: 50px;	
+}
 
 /* ==========================================================================
    Content

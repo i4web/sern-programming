@@ -13,7 +13,7 @@
       
       <div class="header-scroll-wrap img-circle"> <!-- begin header scroll wrapper -->
         <div class="header-scroll img-circle">
-        <a href="#"><span class="header-scroll-btn">Scroll</span></a>
+        <a href="#sern-scroll"><span class="header-scroll-btn">Scroll</span></a>
         </div>  <!-- end header-scroll -->
       </div> <!-- end header scroll wrapper -->
       
