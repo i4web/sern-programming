@@ -23,6 +23,7 @@ After you've installed Grunt and ran `npm install` from the theme root, use `gru
 ## Features
 
 *
+
 *
 
 
