@@ -2,7 +2,7 @@
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
-The Sern Programming theme is a WordPress starter theme based on the Roots WordPress framework, [HTML5 Boilerplate](http://html5boilerplate.com/) & [Bootstrap](http://getbootstrap.com/).
+The Sern Programming theme is a custom wordpress theme for sernprogramming.com based on the Roots WordPress theme framework, [HTML5 Boilerplate](http://html5boilerplate.com/) & [Bootstrap](http://getbootstrap.com/).
 
 
 ## Installation
