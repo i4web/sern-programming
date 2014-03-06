@@ -9,7 +9,7 @@
 <div class="header-img">  <!-- Header Image -->
   <div class="header-overlay">  <!-- Header Overlay --> 
     <div class="header-copy">
-      <p>Hi, my name is Chris and I <br /> <span class="text-large"><span class="text-orange">$</span>program_efficiently</span><br /> in C#, PHP, and JAVA</p>
+      <p>Hi, my name is Chris and I <br /> <span class="text-large"><span class="text-orange">$</span>program_efficiently</span><br /> Array(16).join("wat" - 1) + " Batman!"</p>
       
       <div class="header-scroll-wrap img-circle"> <!-- begin header scroll wrapper -->
         <div class="header-scroll img-circle">

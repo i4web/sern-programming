@@ -1,21 +1,9 @@
 /*!
- * Roots 6.5.2
+ * SernProgramming Custom Theme - Built on top of the Bootstrap Framework
  */
 
 @import "bootstrap/bootstrap.less";
-
-/*Store the Project's color palette variables here. Use project-{color} naming convention */
-@project-dark-blue:		#001833;			
-@project-medium-blue:		#002643;
-@project-light-blue:		#7BB4D9;
-@project-orange:			#ea9400;
-@project-grey:				#ebeff1;
-
-/* Project Specific Font Family */
-@project-font-main: 	 "Helvetica Neue", Helvetica, Arial, sans-serif;
-@project-font-headings: inherit;
-@project-font-size-base:	14px;
-
+@import "project-variables.less";
 
 // Custom Mixins
 // REM Font Sizing
@@ -245,6 +233,15 @@ h1,h2,h3,h4,h5,h6{ color: @project-orange; }
   background-color: #FFF;
   min-height: 230px;
   margin: 8px 8px 0 8px;	
+}
+
+.sern-strengths-title{
+  color: @project-medium-blue;
+  font-weight: 700;
+  .font-size(1.8);
+  text-align: center;
+  
+	
 }
 
 .strengths-cta-wrap{

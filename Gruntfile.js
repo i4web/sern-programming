@@ -16,7 +16,8 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'assets/css/main.min.css': [
-            'assets/less/app.less'
+            'assets/less/app.less',
+			 'assets/less/progress-bar.less'
           ]
         },
         options: {
