@@ -45,7 +45,72 @@ var I4web = {
         return false;
       }
       }
- 	   });
+ 	   });  //end solution for smooth scrolling
+	   
+	   //Script to trigger the radial progress bars when they enter the users viewport
+	   //Function to check whether the elements are in the viewport
+  $.fn.visible = function(partial) {
+    
+      var $t            = $(this),
+          $w            = $(window),
+          viewTop       = $w.scrollTop(),
+          viewBottom    = viewTop + $w.height(),
+          _top          = $t.offset().top,
+          _bottom       = _top + $t.height(),
+          compareTop    = partial === true ? _bottom : _top,
+          compareBottom = partial === true ? _top : _bottom;
+    
+    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+  };
+  
+	//Store the window element
+	var win = $(window);
+	
+	// Store the target class to look for in the viewport. This triggers the action of the radial progress bar upon moving
+	// into the viewport
+	var allMods = $(".radial-progress");  
+	
+	
+	//Function to store the Strengths Pct into Data Progress. Effectively Changes the data-progress value enabling the 0 to *num* effect
+	$.fn.sernStrengths = function() {
+		$('.radial-a').attr('data-progress', strengths[0]);
+		$('.radial-b').attr('data-progress', strengths[1]);
+		$('.radial-c').attr('data-progress', strengths[2]);
+	}
+	
+	//Declare the Strengths Array. Will hold the data-strength attributes input via WordPress Admin area and collected from the HTML data-strength attribute
+	var strengths = [];
+	
+	// Loop through each of the data-strength attributes. We will store the attributes and 
+	$("[data-strength]").each(function() {
+	  
+		 var strength = $(this).attr('data-strength');
+		 strengths.push(strength);
+		
+	//$('.radial-progress').click(window.sernStrengths);
+	  
+	});
+	
+	
+	allMods.each(function(i, el) {
+	  var el = $(el);
+	  if (el.visible(true)) {
+		el.addClass("already-visible"); 
+	  } 
+	});
+	
+	win.scroll(function(event) {
+	  
+	  allMods.each(function(i, el) {
+		var el = $(el);
+		if (el.visible(true)) {
+		  el.addClass("radial-progress-complete"); 
+		  setTimeout(el.sernStrengths, 400);
+		} 
+	  });
+	  
+	});
 	  
     }
   },

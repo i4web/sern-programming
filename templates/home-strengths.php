@@ -85,44 +85,7 @@
   <a href="<?php echo get_bloginfo();?>/who-i-am" class="btn btn-blue">Learn More</a>
   </div>
   
-  <div class="wrap">
-  
-<script type="text/javascript">
 
-
-//Function to store the Strengths Pct into Data Progress. Effectively Changes the data-progress value enabling the 0 to *num* effect
-window.sernStrengths = function() {
-	$('.radial-a').attr('data-progress', strengths[0]);
-	$('.radial-b').attr('data-progress', strengths[1]);
-	$('.radial-c').attr('data-progress', strengths[2]);
-}
-
-//Declare the Strengths Array. Will hold the data-strength attributes input via WordPress Admin area and collected from the HTML data-strength attribute
-var strengths = [];
-
-$("[data-progress]").each(function() {
-  
-  	 var strength = $(this).attr('data-strength');
-	 strengths.push(strength);
-	
-$('.radial-progress').click(window.sernStrengths);
-  
-});
-
-setTimeout(window.sernStrengths, 300);
-
-  
-
-
-
-
-
-
-</script> 
-  
-
-  
-</div>
   
 
 </section>
