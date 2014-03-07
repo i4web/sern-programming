@@ -81,11 +81,9 @@
     </div>   <!-- end sern-strengths-wrapper -->     
   </div>  <!-- end container -->
   <strong></strong>
+
   <div class="strengths-cta-wrap text-center">
   <a href="<?php echo get_bloginfo();?>/who-i-am" class="btn btn-blue">Learn More</a>
   </div>
-  
-
-  
 
 </section>

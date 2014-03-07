@@ -33,6 +33,8 @@ h1,h2,h3,h4,h5,h6{ color: @project-orange; }
 /* ==========================================================================
    Custom Buttons
    ========================================================================== */
+.btn:hover{ color: @project-orange; }
+
 .btn-blue{
   background-color: @project-medium-blue;
   border-color: @project-dark-blue;	
@@ -290,7 +292,51 @@ h1,h2,h3,h4,h5,h6{ color: @project-orange; }
 /* ==========================================================================
    Footer
    ========================================================================== */
+footer{
+  background-color: @project-medium-blue;
+  color: #FFF;
+  padding-top: 20px;
+  min-height: 200px;	
+}
 
+.sern-contact-list{
+  width: 300px;
+  margin: 0 auto;	
+}
+
+.sern-contact-list li{
+  float: left;	
+  height: 50px;
+  list-style: none;
+  margin: 15px;
+  width: 50px;
+}
+
+.sern-contact-list a {
+  display: block;
+  height: 50px;
+  text-indent: -9999px !important;
+  width: 50px;
+}
+
+.contact-github{
+  background: url('../img/sprite.png') -31px -8px no-repeat;	
+}
+ 
+.contact-facebook{
+  background: url('../img/sprite.png') -124px -9px no-repeat;	
+}
+
+.contact-linkedin{
+  background: url('../img/sprite.png') -212px -8px no-repeat;	
+}
+
+.copyright {
+  padding-top: 50px;
+  .font-size(1.3);
+  text-align: center;
+}   
+   
 .content-info { }
 
 
