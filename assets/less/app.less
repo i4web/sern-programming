@@ -21,14 +21,34 @@
    ========================================================================== */
 body,html { height: 100%; }
 
+body{
+  font-family: @project-font-main;	
+  line-height: 1.6;
+}
+
 .grey-bg { background-color: @project-grey; }
 
 /* ==========================================================================
    Typography
    ========================================================================== */
-h1,h2,h3,h4,h5,h6{ color: @project-orange; }   
+h1,h2,h3,h4,h5,h6{ 
+  color: @project-orange; 
+  font-family: @project-font-headings;
+}   
    
 .text-orange{	color: @project-orange;}
+
+
+blockquote{
+  background-color: #F2F2F2;	
+  border-color: #7bb4d9;	
+}
+
+blockquote p{
+  color: #7C7C7C;
+  font-style: italic;
+  font-weight: 300;	
+}
 
 /* ==========================================================================
    Custom Buttons
@@ -40,6 +60,16 @@ h1,h2,h3,h4,h5,h6{ color: @project-orange; }
   border-color: @project-dark-blue;	
   color: #FFF;
 }
+
+.btn-orange{
+  background-color: @project-orange;
+  color: #FFF;
+}
+
+.btn-orange:hover{
+  color: @project-medium-blue;  	
+}
+
 
 /* ==========================================================================
    Navbar Styling
@@ -211,6 +241,11 @@ h1,h2,h3,h4,h5,h6{ color: @project-orange; }
   padding: 50px;	
 }
 
+.sern-widget-area h2,
+.sern-strengths-area h2{
+  color: @project-orange;	
+}
+
 .sern-widget-wrapper,
 .sern-strengths-area{
   padding-top: 30px;
@@ -226,6 +261,10 @@ h1,h2,h3,h4,h5,h6{ color: @project-orange; }
   width: 100%;
 }
 
+.sern-widget-header a {
+  color: #FFF;
+}
+
 .sern-widget-header h4{
   color: #FFF;	
   font-weight: 300;
@@ -235,6 +274,18 @@ h1,h2,h3,h4,h5,h6{ color: @project-orange; }
   background-color: #FFF;
   min-height: 230px;
   margin: 8px 8px 0 8px;	
+  padding: 10px;
+}
+
+
+
+.sern-widget-content h5 {
+  font-size: 16px;
+  margin-top: -5px;
+}
+
+.sern-widget-btn{
+  padding: 5px;	
 }
 
 .sern-strengths-title{
@@ -242,19 +293,150 @@ h1,h2,h3,h4,h5,h6{ color: @project-orange; }
   font-weight: 700;
   .font-size(1.8);
   text-align: center;
-  
-	
 }
 
 .strengths-cta-wrap{
   padding-top: 50px;	
 }
 
+.sern-github-repo-list,
+.sern-languages-list,
+.sern-toolbox-list {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.sern-github-repo-list li , 
+.sern-languages-list li{
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.sern-github-repo-list li:first-child{
+  padding-top: 0px;	
+}
+
+.sern-github-repo-list li:last-child{
+  border-bottom: 0px;	
+}
+
+.sern-github-repo-list li:before{
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  margin-right: 4px;
+  text-indent: 6px;
+  vertical-align: middle;
+  background: url('../img/sprite.png') -47px -151px no-repeat;
+  content: "";	
+}
+
+.sern-github-meta {
+  font-size: 13px;
+  position: absolute;
+  right: 10%;
+}
+
+.sern-github-meta .badge{
+  background-color: @project-light-blue;	
+}
+
+.sern-github-meta a{
+  color: #8A8A8A;	
+}
+
+.sern-languages-list progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+   appearance: none;
+  float: right;
+  width: 200px;
+  height: 20px;
+}
+
+.sern-languages-list progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.sern-languages-list progress[value]::-webkit-progress-value {
+  background-image:
+	   -webkit-linear-gradient(top, rgba(101, 190, 112, .25),rgba(109, 205, 121, .25)),
+	   -webkit-linear-gradient(left, #65be70, #6dcd79);
+    border-radius: 2px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+
+/* ==========================================================================
+   About Page
+   ========================================================================== */
+.sern-gravatar {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  width: 150px;
+}
+
+.sern-gravatar small{
+  font-style: italic;	
+}
+
+.sern-resume-wrapper{
+  background-color: #efefef;
+  min-height: 75px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  text-align: center;	
+}
+
+/* ==========================================================================
+   Portfolio and Custom Taxonomy Archives
+   ========================================================================== */
+.sern-project-desc-wrap {
+  min-height: 70px;
+}
+
+.sern-stats {
+  margin: 0 auto;
+  min-height: 100px;
+  padding-left: 0px;
+}
+
+
+.sern-stats li {
+  list-style: none;
+  padding: 5px 5px 5px 0px;
+  text-align: center;
+}
+
+
+
+.sern-stats h2{
+  color: @project-light-blue;	
+}
+
+.sern-stats small{
+  font-size: 15px;	
+  font-weight: 100;
+}
+
+.pager{
+  padding-left: 15px;	
+}
+
+.pager .previous>a, .pager .previous>span, .pager .next>a, .pager .next>span{
+  margin-top: 15px;	
+}
+
+
 /* ==========================================================================
    Content
    ========================================================================== */
 
-.content { }
+.content { padding-bottom: 50px;}
 
 
 
@@ -293,10 +475,17 @@ h1,h2,h3,h4,h5,h6{ color: @project-orange; }
    Footer
    ========================================================================== */
 footer{
-  background-color: @project-medium-blue;
   color: #FFF;
   padding-top: 20px;
   min-height: 200px;	
+}
+
+.content-info{
+  background-color: @project-medium-blue;	
+}
+
+footer h4{
+  color: @project-orange;	
 }
 
 .sern-contact-list{
@@ -310,6 +499,12 @@ footer{
   list-style: none;
   margin: 15px;
   width: 50px;
+  
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;  
 }
 
 .sern-contact-list a {
@@ -322,13 +517,25 @@ footer{
 .contact-github{
   background: url('../img/sprite.png') -31px -8px no-repeat;	
 }
+
+.contact-github:hover{
+  background: url('../img/sprite.png') -31px -74px no-repeat;	
+}
  
 .contact-facebook{
-  background: url('../img/sprite.png') -124px -9px no-repeat;	
+  background: url('../img/sprite.png') -124px -8px no-repeat;	
+}
+
+.contact-facebook:hover{
+  background: url('../img/sprite.png') -124px -73px no-repeat;	
 }
 
 .contact-linkedin{
   background: url('../img/sprite.png') -212px -8px no-repeat;	
+}
+
+.contact-linkedin:hover{
+  background: url('../img/sprite.png') -212px -73px no-repeat;	
 }
 
 .copyright {
@@ -347,7 +554,10 @@ footer{
    ========================================================================== */
 
 .aligncenter { display: block; margin: 0 auto; }
-.alignleft { float: left; }
+.alignleft { 
+  float: left; 
+  margin: 0px 25px 0 10px;
+}
 .alignright { float: right; }
 figure.alignnone { margin-left: 0; margin-right: 0; }
 
@@ -370,7 +580,7 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 @media (min-width: @screen-md-min) {
 
 .header-img { 
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
 .navbar-collapse{
@@ -389,6 +599,20 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 .header-copy .text-large{
   .font-size(8.5);
 }	
+
+.sern-stats {
+  width: 300px;
+}
+
+.sern-stats li{
+  float: left;
+  width: 100px;	
+} 
+
+.sern-stats li:hover{
+  border-bottom: 2.5px solid @project-orange;
+  border-radius: 1px;	
+}
 
 	
 }

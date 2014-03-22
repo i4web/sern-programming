@@ -2,6 +2,10 @@
 /**
  * Register sidebars and widgets
  */
+require_once('i4web-widget-github.php'); 
+require_once('i4web-widget-progress-bars.php');
+require_once('i4web-widget-toolbox.php');
+ 
 function i4web_widgets_init() {
   // Sidebars
   register_sidebar(array(
@@ -11,6 +15,15 @@ function i4web_widgets_init() {
     'after_widget'  => '</section>',
     'before_title'  => '<h3>',
     'after_title'   => '</h3>',
+  ));
+  
+  register_sidebar(array(
+    'name'          => __('Home Page', 'i4web'),
+    'id'            => 'home-page-widget',
+    'before_widget' => '<div class="col-lg-4 sern-widget-wrapper"><div class="sern-widget">',
+    'after_widget'  => '</div></div>',
+    'before_title'  => '<div class="sern-widget-header"><h4><span class="glyphicon glyphicon-usd text-orange"></span> ',
+    'after_title'   => '</h4></div>',
   ));
 
   register_sidebar(array(
@@ -24,8 +37,13 @@ function i4web_widgets_init() {
 
   // Widgets
   register_widget('I4web_Vcard_Widget');
+  register_widget('I4web_Github_Widget');
+  register_widget('I4web_ProgressBar_Widget');
+  register_widget('I4web_ToolBox_Widget');
+  
 }
 add_action('widgets_init', 'i4web_widgets_init');
+
 
 /**
  * Example vCard widget

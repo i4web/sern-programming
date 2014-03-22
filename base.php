@@ -22,11 +22,11 @@
       <main class="main <?php echo i4web_main_class(); ?>" role="main">
         <?php include i4web_template_path(); ?>
       </main><!-- /.main -->
-      <?php if (i4web_display_sidebar()) : ?>
-        <aside class="sidebar <?php echo i4web_sidebar_class(); ?>" role="complementary">
-          <?php include i4web_sidebar_path(); ?>
+      <?php //  if (i4web_display_sidebar()) : ?>
+       <!--  <aside class="sidebar <?php // echo i4web_sidebar_class(); ?>" role="complementary">
+          <?php // include i4web_sidebar_path(); ?>
         </aside><!-- /.sidebar -->
-      <?php endif; ?>
+      <?php // endif; ?>
     </div><!-- /.content -->
   </div><!-- /.wrap -->
 

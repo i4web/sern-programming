@@ -13,7 +13,7 @@
   <div class="container">  <!-- Begin container -->
     <div class="col-sm-4 col-lg-4 sern-strengths-wrapper">  <!-- Begin sern-strengths-wrapper -->
      
-      <div class="radial-progress radial-a" data-strength="50" data-progress="0">  <!-- Begin Progress Bar -->
+      <div class="radial-progress radial-a" data-strength="10" data-progress="0">  <!-- Begin Progress Bar -->
         <div class="circle">
           <div class="mask full">
             <div class="fill"></div>
@@ -37,7 +37,7 @@
     
     <div class="col-sm-4 col-lg-4 sern-strengths-wrapper">  <!-- Begin sern-strengths-wrapper -->
     
-      <div class="radial-progress radial-b" data-strength="60" data-progress="0">  <!-- Begin Progress Bar -->
+      <div class="radial-progress radial-b" data-strength="20" data-progress="0">  <!-- Begin Progress Bar -->
         <div class="circle">
           <div class="mask full">
             <div class="fill"></div>
@@ -59,7 +59,7 @@
     
     </div>  <!-- end sern-strengths-wrapper -->
     <div class="col-sm-4 col-lg-4 sern-strengths-wrapper">  <!-- Begin sern-strengths-wrapper -->
-      <div class="radial-progress radial-c" data-strength="80" data-progress="0">  <!-- Begin Progress Bar -->
+      <div class="radial-progress radial-c" data-strength="70" data-progress="0">  <!-- Begin Progress Bar -->
         <div class="circle">
           <div class="mask full">
             <div class="fill"></div>

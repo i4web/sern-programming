@@ -1,2 +1,2 @@
-<time class="published" datetime="<?php echo get_the_time('c'); ?>"><?php echo get_the_date(); ?></time>
-<p class="byline author vcard"><?php echo __('By', 'i4web'); ?> <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="fn"><?php echo get_the_author(); ?></a></p>
+<p><?php echo get_the_term_list( $post->ID, 'type', 'Project Type: ', '| ', '' ); ?></p>
+<h5><small><time class="published" datetime="<?php echo get_the_time('c'); ?>">Last updated up <?php echo get_the_date(); ?></time> <?php echo __('By', 'i4web'); ?> <a href="<?php echo get_bloginfo('url');?>/who-i-am" rel="author" class="fn"><?php echo get_the_author(); ?></a></small></h5>

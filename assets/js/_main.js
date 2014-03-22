@@ -22,7 +22,8 @@ var I4web = {
   // All pages
   common: {
     init: function() {
-      // JavaScript to be fired on all pages
+      // JavaScript to be fired on all pages	  
+	  
     }
   },
   // Home page
@@ -41,7 +42,7 @@ var I4web = {
 	  if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top
-        }, 1000);
+        }, 500);
         return false;
       }
       }
@@ -112,6 +113,8 @@ var I4web = {
 	  
 	});
 	  
+
+	  
     }
   },
   // About us page, note the change from about-us to about_us.
@@ -119,6 +122,24 @@ var I4web = {
     init: function() {
       // JavaScript to be fired on the about us page
     }
+  },
+  
+  archive:{
+	  init: function(){
+      
+	  setActive();
+
+	  //Function to add the "active" class to the menu where the Walker class does not due to rewrites done to the CPT and Taxonomies.
+	  function setActive() {
+	    var path = window.location.pathname;
+		 
+		 //split the path name and grab the 2nd element in the array to search for the correct class 
+	    $('.menu-' + path.split("/")[2] ).addClass('active');
+		
+		}			  
+
+		
+	  }
   }
 };
 

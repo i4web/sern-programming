@@ -1,7 +1,7 @@
 <footer class="content-info" role="contentinfo">
   <div class="container">
     
-	<h4 class="text-center">Get in Touch!</h4>
+	<h4 class="text-center">Get in Touch</h4>
     
     <ul class="sern-contact-list clearfix">
       <li class="contact-github"><a href="//github.com/serneum" target="_blank" title="Chris Rees on Github">Github</a></li>

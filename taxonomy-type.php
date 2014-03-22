@@ -1,4 +1,7 @@
-<?php get_template_part('templates/page', 'header'); ?>
+<?php 
+
+
+get_template_part('templates/page', 'header'); ?>
 
 <?php if (!have_posts()) : ?>
   <div class="alert alert-warning">
@@ -8,16 +11,20 @@
 <?php endif; ?>
 
 <?php 
-  if(is_post_type_archive('i4web_portfolio')){  //Only retrieve the github data if we are on the Archive page for the Portfolio CPT
+  if(is_tax()){  //Only retrieve the github repos if the custom taxonomy archive page is being displayed
   
     $sern_repos = i4web_get_repos_test();
-
+	
   }
 ?>
 
+
+
 <?php while (have_posts()) : the_post(); ?>
-  <?php include(locate_template('templates/content.php'));  //using locate_template allows us to pass in the $sern_repos variable ?>
+  <?php include(locate_template('templates/content.php')); ?>
 <?php endwhile; ?>
+
+<hr>
 
 <?php if ($wp_query->max_num_pages > 1) : ?>
   <nav class="post-nav">
@@ -27,3 +34,4 @@
     </ul>
   </nav>
 <?php endif; ?>
+
