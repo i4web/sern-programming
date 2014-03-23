@@ -36,6 +36,34 @@ function i4web_get_repos_test() {
 }
 
 /**
+ * Get the users Github information
+ */
+function i4web_get_git_avatar() {
+    $transient_key = 'sern_avatar';
+    $repos = get_transient( $transient_key );
+    if ( false !== $repos )
+        return $repos;
+
+    $response = wp_remote_get( 'https://api.github.com/users/serneum' );
+	
+    if ( is_wp_error( $response ) )
+        return array();
+		
+    $repos = json_decode( wp_remote_retrieve_body( $response ) );
+	
+	
+    
+	// 60 seconds * 60 minutes
+	$hourInSeconds = 3600;
+	
+	//Transients are set in seconds. Changing the time here will change when the transient expires. default set to 24 hours
+    set_transient( $transient_key, $repos, 24 * $hourInSeconds );
+	
+    return (array) $repos;
+}
+
+
+/**
  * Alter the default excerpt length 
  */
 function custom_excerpt_length( $length ) {
