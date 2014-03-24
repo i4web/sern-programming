@@ -76,7 +76,7 @@ class I4web_ToolBox_Widget extends WP_Widget{
   </div><!-- end sern-widget-content -->  
   
     <div class="sern-widget-btn text-center">
-      <a href="<?php get_bloginfo('url');?>/who-i-am" class="btn btn-orange" target="_blank">View Portfolio</a>
+      <a href="<?php get_bloginfo('url');?>/who-i-am" class="btn btn-orange">View Portfolio</a>
     </div>                           
     
   <?php

@@ -80,7 +80,7 @@ class I4web_ProgressBar_Widget extends WP_Widget{
   </div><!-- end sern-widget-content -->                     
 
     <div class="sern-widget-btn text-center">
-      <a href="<?php get_bloginfo('url');?>/who-i-am" class="btn btn-orange" target="_blank">About Chris</a>
+      <a href="<?php get_bloginfo('url');?>/who-i-am" class="btn btn-orange">About Chris</a>
     </div>    
     
   <?php
