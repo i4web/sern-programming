@@ -78,6 +78,10 @@ class I4web_ProgressBar_Widget extends WP_Widget{
   <?php $this->i4web_progress_bars($instance);?> 
                 
   </div><!-- end sern-widget-content -->                     
+
+    <div class="sern-widget-btn text-center">
+      <a href="<?php get_bloginfo('url');?>/who-i-am" class="btn btn-orange" target="_blank">About Chris</a>
+    </div>    
     
   <?php
     echo $after_widget; //Display the html after the widget
@@ -135,11 +139,7 @@ class I4web_ProgressBar_Widget extends WP_Widget{
       <li><?php echo $progress_info['language_two'];?> <progress max="100" value="<?php echo $progress_info['language_two_pct'];?>"></progress></li>
       <li><?php echo $progress_info['language_three'];?> <progress max="100" value="<?php echo $progress_info['language_three_pct'];?>"></progress></li>
       <li><?php echo $progress_info['language_four'];?> <progress max="100" value="<?php echo $progress_info['language_four_pct'];?>"></progress></li>      
-    </ul>
-    
-    <div class="sern-widget-btn text-center">
-      <a href="<?php get_bloginfo('url');?>/who-i-am" class="btn btn-orange" target="_blank">About Chris</a>
-    </div>                
+    </ul>            
     
 	
 	  

@@ -91,11 +91,12 @@ class I4web_Github_Widget extends WP_Widget{
 ?>
     </ul> <!-- end sern-github-repo-list -->
     
-    <div class="sern-widget-btn text-center">
-      <a href="<?php echo $instance['github_user_url'];?>" class="btn btn-orange" target="_blank">Check out my Github</a>
-    </div>   
-                
+                 
   </div><!-- end sern-widget-content -->                     
+
+    <div class="sern-widget-btn text-center">
+      <a href="<?php echo $instance['github_user_url'];?>" class="btn btn-orange" target="_blank">View All</a>
+    </div> 
     
   <?php
     echo $after_widget; //Display the html after the widget

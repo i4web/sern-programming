@@ -73,7 +73,11 @@ class I4web_ToolBox_Widget extends WP_Widget{
 
   <?php $this->i4web_toolbox($instance);?> 
                 
-  </div><!-- end sern-widget-content -->                     
+  </div><!-- end sern-widget-content -->  
+  
+    <div class="sern-widget-btn text-center">
+      <a href="<?php get_bloginfo('url');?>/who-i-am" class="btn btn-orange" target="_blank">View Portfolio</a>
+    </div>                           
     
   <?php
     echo $after_widget; //Display the html after the widget
@@ -126,18 +130,14 @@ class I4web_ToolBox_Widget extends WP_Widget{
   $toolbox_info = $instance; 
 ?>
     <p><?php echo $toolbox_info['toolbox_lead_txt'];?></p>
-    <ul class="sern-languages-list">
+    <ul class="sern-toolbox-list">
       <li><kbd><?php echo $toolbox_info['toolbox_arr1'];?></kbd></li>
       <li><kbd><?php echo $toolbox_info['toolbox_arr2'];?></kbd></li>
       <li><kbd><?php echo $toolbox_info['toolbox_arr3'];?></kbd></li>
       <li><kbd><?php echo $toolbox_info['toolbox_arr4'];?></kbd></li>      
     </ul>
-       
-    <div class="sern-widget-btn text-center">
-      <a href="<?php get_bloginfo('url');?>/who-i-am" class="btn btn-orange" target="_blank">View Portfolio</a>
-    </div>                
-    
-	
+                 
+   
 	  
 <?php  }
 	
