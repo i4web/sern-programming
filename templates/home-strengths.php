@@ -13,7 +13,7 @@
   <div class="container">  <!-- Begin container -->
     <div class="col-sm-4 col-lg-4 sern-strengths-wrapper">  <!-- Begin sern-strengths-wrapper -->
      
-      <div class="radial-progress radial-a" data-strength="10" data-progress="0">  <!-- Begin Progress Bar -->
+      <div class="radial-progress radial-a" data-strength="70" data-progress="0">  <!-- Begin Progress Bar -->
         <div class="circle">
           <div class="mask full">
             <div class="fill"></div>
@@ -30,7 +30,7 @@
 	  </div>  <!-- end Progress Bar -->  
      
      <div class="sern-strengths-title"> 
-       <p>Software Development<p>
+       <p>Game Development<p>
      </div> 
      
     </div> <!-- end sern-strengths-wrapper -->
@@ -59,7 +59,7 @@
     
     </div>  <!-- end sern-strengths-wrapper -->
     <div class="col-sm-4 col-lg-4 sern-strengths-wrapper">  <!-- Begin sern-strengths-wrapper -->
-      <div class="radial-progress radial-c" data-strength="70" data-progress="0">  <!-- Begin Progress Bar -->
+      <div class="radial-progress radial-c" data-strength="10" data-progress="0">  <!-- Begin Progress Bar -->
         <div class="circle">
           <div class="mask full">
             <div class="fill"></div>
@@ -76,7 +76,7 @@
 	  </div>  <!-- end Progress Bar -->  
      
      <div class="sern-strengths-title"> 
-       <p>Game Development<p>
+       <p>Software Development<p>
      </div> 
     </div>   <!-- end sern-strengths-wrapper -->     
   </div>  <!-- end container -->
