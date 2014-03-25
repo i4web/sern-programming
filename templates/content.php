@@ -20,26 +20,26 @@ $repoURL = '';
   
   <?php // get_template_part('templates/entry-meta');
     
-	$gitMatch = false;
+	$gitMatch = false;  //Initial the trigger to false
 	
    	foreach ( $sern_repos as $repo ) { // loop through repos
 	
       if ($repo->name == $repoName){  // we found a match now lets store some the HTML URL and set the trigger to true
-	  $gitMatch = true;
-	  $repoURL = $repo->html_url; ?>
-	        
-        <?php if($repo->description != ''){  //use the github description when available 
+	    $gitMatch = true;
+	    $repoURL = $repo->html_url; 
+		
+		if($repo->description != ''){  //use the github description when available 
 		 		  
-				  $repoTrimmed =  substr($repo->description, 0,50);
-				  $repoTrimmed .= '&hellip;';
+				  $repoTrimmed =  substr($repo->description, 0,50);  //trim the description to 50 chars
+				  $repoTrimmed .= '&hellip;'; //append an ellipse to the end of the description when it's cut off
 		
 		?>
         
-        		<p><?php echo $repoTrimmed; ?></p>
-        <?php }
-		      else{ ?>
+          <p><?php echo $repoTrimmed; ?></p>
+  <?php }
+		 else{ ?>
               <p><?php  the_excerpt(); //no github description available so use the_excerpt ?></p>
-        <?php  }  ?>
+ <?php  }   ?>
     </div> <!-- end sern-project-desc-wrap <?php // this closing tag is inside the for loop so we need to add it to the condition that checks for if $github == false ?> -->          
      
       <div class="sern-stats-wrap">
@@ -52,13 +52,13 @@ $repoURL = '';
          
 <?php } //end if
       else{
-	     
+	     // do nothing
 	  }	
 	} //end foreach 
   
   	  if($gitMatch == false){  // If we did not find a repo for this project or if it was not set we'll display the_excerpt ?>
 		 <p><?php the_excerpt(); ?></p>
-        </div> <!-- end sern-project-desc-wrap --><?php // the opening tag is before the for loop so this tag is included here too  ?> 
+    </div> <!-- end sern-project-desc-wrap --><?php // the opening tag is before the for loop so this tag is included here too  ?> 
          
      <?php // Since the Project is not on Github lets rab the Project custom stats as a fallback
 	   $statOne = get_post_meta( get_the_ID(), 'i4_stat_one', true ); 	
