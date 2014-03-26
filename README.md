@@ -24,7 +24,9 @@ Use your favorite code editor to edit your LESS files located in the /assets/les
 
 ## Home Page Widgets
 
-Access your custom widgets via your WordPress Administration panel. Your theme is equipped with 3 custom built widgets:
+Access your custom widgets area via your WordPress Administration panel. Hovering over the "Appearance" menu link will display the link to access your widgets. Once you're in the Widgets page you can view the "Home Page" box to display your current widgets. You may drag and drop those to re-arrange them as you please.
+
+Your theme is equipped with 3 custom built widgets:
 
 * Github - Simple widget to display your latest Github Repos
 * Progress Bars - Displays a language and a progress bar to display your strength in that language out of 100
@@ -81,6 +83,9 @@ I'm really excited about a particularly cool function that I was able to come up
 
 We set you up with a default about page. Click on the "Pages" link on the WordPress admin menu and click to edit your "About Chris" page. You can edit its contents via the visual or text tab in the wordpress editor. 
 
+## Changing the Home Page Header Copy
+
+If you would like to change the text that is overlayed over the Header image on your website open up the **home-header.php** file that is located in the templates directory of your theme's folder.
 
 ## Changing Pagination on Portfolio Page
 
