@@ -40,10 +40,10 @@ To edit your radial progress bars please visit the templates directory and edit 
 
 To add a new project to your Portfolio please follow the following steps in the admin area:
 
-* Add a New Project via the Portfolio menu link by hovering over "Portfolio" and selecting "Add New Project". 
-* Enter in the title of your project and set your URL. By default WordPress will remove spaces from your title and replace them with dashes to make them URL friendly.
-* Select the type of project that you are adding inside the "Type" box located just below the Publish box on the right side of the page.
-* Create your Project write up, add images, and more inside the text editor.
+1. Add a New Project via the Portfolio menu link by hovering over "Portfolio" and selecting "Add New Project". 
+2. Enter in the title of your project and set your URL. By default WordPress will remove spaces from your title and replace them with dashes to make them URL friendly.
+3. Select the type of project that you are adding inside the "Type" box located just below the Publish box on the right side of the page.
+4. Create your Project write up, add images, and more inside the text editor.
 
 Your Projects are equipped with the ability to add custom metadata for each project. Just below the text editor you will find a "Project Meta Data" box that has numerous fields that you can populate. 
 
