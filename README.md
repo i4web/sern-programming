@@ -59,6 +59,24 @@ To add a custom description for your project you can fill in the "Excerpt" box w
 
 Hit the publish button and witness the awesomeness by visiting your portfolio page.
 
+## Custom Shortcodes in the WordPress text editor
+
+We created some custom shortcodes to help you type up your project write ups with as little to no HTML code needed as possible. With your theme you have the following shortcodes available:
+
+* The [pre] shortcode - used for displaying programming code on via your website
+* The [kbd] shortcode - used to display HTML in the browsers default monotype font. Styled with Bootstrap to look like a terminal or CLI. 
+
+To demonstrate how you can use the shortcodes in your WordPress editor you can copy and paste the following inside the editor
+
+```
+My latest project MyNewGame was released today. I'm particularly excited about this project because it's easy to install and you'll be playing it in now time. To download and install my latest game all you have to do is use apt by typing
+[kbd]sudo apt-get	install doge [/kbd]
+
+I'm really excited about a particularly cool function that I was able to come up with, first one to get it wins
+
+[pre]Array(16).join("wat" - 1) + " Batman!" [/pre]
+```
+
 ## Support
 
 Contact [i-4Web](http://www.i-4web.com/) to ask questions and get support.
