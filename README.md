@@ -34,9 +34,30 @@ Access your custom widgets via your WordPress Administration panel. Your theme i
 
 To edit your radial progress bars please visit the templates directory and edit home-strengths.php
 
-## Adding a New Project
+## Adding a New Project that is hosted on Github
 
+To add a new project to your Portfolio please follow the following steps in the admin area:
 
+* Add a New Project via the Portfolio menu link by hovering over "Portfolio" and selecting "Add New Project". 
+* Enter in the title of your project and set your URL. By default WordPress will remove spaces from your title and replace them with dashes to make them URL friendly.
+* Select the type of project that you are adding inside the "Type" box located just below the Publish box on the right side of the page.
+* Create your Project write up, add images, and more inside the text editor.
+
+Your Projects are equipped with the ability to add custom metadata for each project. Just below the text editor you will find a "Project Meta Data" box that has numerous fields that you can populate. 
+
+If you would like your project to display the data from its Github Repository the you simply have to enter its corresponding Github Repo title exactly as it appears. You may then leave all fields below it blank. `Please note that if this field is populated all custom metadata for the project will not be displayed`
+
+Hit the publish button and witness the awesomeness by visiting your portfolio page.
+
+## Adding a New Project that is NOT hosted on Github
+
+To add a new project that is not hosted on Github please follow the steps listed above.
+
+Once you've got the basics for your project setup you can add custom project metadata via the Project Stat Title - #X and Project Stat - #X fields. Try to keep the titles for these to 1 or two short words. When entering in custom stats for your project there is a known issue with the digit "0". WordPress uses that to indicate that the field has not been updated ( i.e. binary false ) and won't save the data into the database. Instead use the word "Zero".
+
+To add a custom description for your project you can fill in the "Excerpt" box with your custom description in plain text. 
+
+Hit the publish button and witness the awesomeness by visiting your portfolio page.
 
 ## Support
 
