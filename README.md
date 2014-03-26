@@ -61,7 +61,7 @@ Hit the publish button and witness the awesomeness by visiting your portfolio pa
 
 ## Custom Shortcodes in the WordPress text editor
 
-We created some custom shortcodes to help you type up your project write ups with as little to no HTML code needed as possible. With your theme you have the following shortcodes available:
+We created some custom shortcodes to help you type up your project write ups with as little to no HTML code needed as possible. Shortcodes are used to wrap your content with opening and ending tags that will wrap your content with HTML. With your theme you have the following shortcodes available:
 
 * The [pre] shortcode - used for displaying programming code on via your website
 * The [kbd] shortcode - used to display HTML in the browsers default monotype font. Styled with Bootstrap to look like a terminal or CLI. 
@@ -76,6 +76,15 @@ I'm really excited about a particularly cool function that I was able to come up
 
 [pre]Array(16).join("wat" - 1) + " Batman!" [/pre]
 ```
+
+## Editing your About Chris Page
+
+We set you up with a default about page. Click on the "Pages" link on the WordPress admin menu and click to edit your "About Chris" page. You can edit its contents via the visual or text tab in the wordpress editor. 
+
+
+## Changing Pagination on Portfolio Page
+
+To change the number of projects that appear per page simply go to your admin dashboard and hover over the "Settings" link and click on "Reading". Change the "Blog pages show at most" value to your desired value.
 
 ## Support
 
