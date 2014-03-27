@@ -29,8 +29,8 @@ Access your custom widgets area via your WordPress Administration panel. Hoverin
 Your theme is equipped with 3 custom built widgets:
 
 * GitHub - Simple widget to display your latest GitHub Repos
-* Progress Bars - Displays a language and a progress bar to display your strength in that language out of 100
-* Toolbox Widget - Display what is in your Developers toolbox made to look separate arrays
+* Progress Bars - Displays a language and a progress bar to display your strength in that language out of 100. Each value is customizable via the Widget interface.
+* Toolbox Widget - Display what is in your Developers toolbox made to look like separate arrays
 
 Settings for each of these widgets can also be edited through the "Widgets" page in the Administration panel.
 
@@ -94,6 +94,12 @@ If you would like to change the text that is overlayed over the Header image on 
 ## Changing Pagination on Portfolio Page
 
 To change the number of projects that appear per page simply go to your admin dashboard and hover over the "Settings" link and click on "Reading". Change the "Blog pages show at most" value to your desired value.
+
+## The JavaScript File
+
+Your websites main javascript file is located under the assets/js directory and titled _main.js. This file uses DOM-based routing to help fire the JavaScript only when needed. Background and creator of this method is listed in the files comments. 
+
+@TODO finish this description
 
 ## Support
 
