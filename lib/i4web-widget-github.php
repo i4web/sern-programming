@@ -79,7 +79,7 @@ class I4web_Github_Widget extends WP_Widget{
 		
 	if($i <= 3){ 
 	  echo '<li>';
-	  echo '<a href="'.$repo->html_url.'" target="_blank">'.$repo->name.'</a><span class="sern-github-meta hidden-xs"><a href="'.$repo->forks_url.'">Fork <span class="badge">'.$repo->forks_count.'</span></a></span>';
+	  echo '<a href="'.$repo->html_url.'" target="_blank">'.$repo->name.'</a><span class="sern-github-meta"><a href="'.$repo->forks_url.'">Fork <span class="badge">'.$repo->forks_count.'</span></a></span>';
 	  echo '</li>';
 	  $i++;
 	}
