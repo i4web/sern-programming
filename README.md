@@ -1,4 +1,4 @@
-# [Seneum Programming Website Theme](http://www.sernprogramming.com/)
+# [Sern Programming Website Theme](http://www.sernprogramming.com/)
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
@@ -40,12 +40,12 @@ To edit your radial progress bars please visit the templates directory and edit 
 
 To add a new project to your Portfolio please follow the following steps in the admin area:
 
-1. Add a New Project via the Portfolio menu link by hovering over "Portfolio" and selecting "Add New Project". 
+1. Add a New Project via the Portfolio menu link by hovering over "Portfolio" and selecting "Add New Project".
 2. Enter in the title of your project and set your URL. By default WordPress will remove spaces from your title and replace them with dashes to make them URL friendly.
 3. Select the type of project that you are adding inside the "Type" box located just below the Publish box on the right side of the page.
 4. Create your Project write up, add images, and more inside the text editor.
 
-Your Projects are equipped with the ability to add custom metadata for each project. Just below the text editor you will find a "Project Meta Data" box that has numerous fields that you can populate. 
+Your Projects are equipped with the ability to add custom metadata for each project. Just below the text editor you will find a "Project Meta Data" box that has numerous fields that you can populate.
 
 If you would like your project to display the data from its Github Repository the you simply have to enter its corresponding Github Repo title exactly as it appears. You may then leave all fields below it blank. `Please note that if this field is populated all custom metadata for the project will not be displayed`
 
@@ -57,7 +57,7 @@ To add a new project that is not hosted on Github please follow the steps listed
 
 Once you've got the basics for your project setup you can add custom project metadata via the Project Stat Title - #X and Project Stat - #X fields. Try to keep the titles for these to 1 or two short words. When entering in custom stats for your project there is a known issue with the digit "0". WordPress uses that to indicate that the field has not been updated ( i.e. binary false ) and won't save the data into the database. Instead use the word "Zero".
 
-To add a custom description for your project you can fill in the "Excerpt" box with your custom description in plain text. 
+To add a custom description for your project you can fill in the "Excerpt" box with your custom description in plain text.
 
 Hit the publish button and witness the awesomeness by visiting your portfolio page.
 
@@ -66,22 +66,24 @@ Hit the publish button and witness the awesomeness by visiting your portfolio pa
 We created some custom shortcodes to help you type up your project write ups with as little to no HTML code needed as possible. Shortcodes are used to wrap your content with opening and ending tags that will wrap your content with HTML. With your theme you have the following shortcodes available:
 
 * The [pre] shortcode - used for displaying programming code on via your website
-* The [kbd] shortcode - used to display HTML in the browsers default monotype font. Styled with Bootstrap to look like a terminal or CLI. 
+* The [kbd] shortcode - used to display HTML in the browsers default monotype font. Styled with Bootstrap to look like a terminal or CLI.
 
 To demonstrate how you can use the shortcodes in your WordPress editor you can copy and paste the following inside the editor
 
 ```
-My latest project MyNewGame was released today. I'm particularly excited about this project because it's easy to install and you'll be playing it in now time. To download and install my latest game all you have to do is use apt by typing
-[kbd]sudo apt-get	install doge [/kbd]
+My latest project MyNewGame was released today. I'm particularly excited about this project
+because it's easy to install and you'll be playing it in now time. To download and install
+my latest game all you have to do is use apt by typing
+[kbd]sudo apt-get install doge[/kbd]
 
-I'm really excited about a particularly cool function that I was able to come up with, first one to get it wins
-
-[pre]Array(16).join("wat" - 1) + " Batman!" [/pre]
+I'm really excited about a particularly cool function that I was able to come up with, first
+one to get it wins
+[pre]Array(16).join("wat" - 1) + " Batman!"[/pre]
 ```
 
-## Editing your About Chris Page
+## Editing your "About Chris" Page
 
-We set you up with a default about page. Click on the "Pages" link on the WordPress admin menu and click to edit your "About Chris" page. You can edit its contents via the visual or text tab in the wordpress editor. 
+We set you up with a default about page. Click on the "Pages" link on the WordPress admin menu and click to edit your "About Chris" page. You can edit its contents via the visual or text tab in the wordpress editor.
 
 ## Changing the Home Page Header Copy
 
