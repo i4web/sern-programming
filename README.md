@@ -49,7 +49,7 @@ To add a new project to your Portfolio please follow the following steps in the 
 
 Your Projects are equipped with the ability to add custom metadata for each project. Just below the text editor you will find a "Project Meta Data" box that has numerous fields that you can populate.
 
-If you would like your project to display the data from its GitHub Repository the you simply have to enter its corresponding GitHub Repo title exactly as it appears. You may then leave all fields below it blank. `Please note that if this field is populated all custom metadata for the project will not be displayed`
+If you would like your project to display the data from its GitHub Repository then you simply have to enter its corresponding GitHub Repo title exactly as it appears. You may then leave all fields below it blank. `Please note that if this field is populated all custom metadata for the project will not be displayed`
 
 Hit the publish button and witness the awesomeness by visiting your portfolio page.
 
