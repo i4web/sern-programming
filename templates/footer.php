@@ -5,7 +5,7 @@
     
     <ul class="sern-contact-list clearfix">
       <li class="contact-github"><a href="//github.com/serneum" target="_blank" title="Chris Rees on Github">Github</a></li>
-      <li class="contact-facebook"><a href="//facebook.com" target="_blank" title="Chris Rees on Facebook">Facebook</a></li>
+      <li class="contact-facebook"><a href="//facebook.com/Serneum" target="_blank" title="Chris Rees on Facebook">Facebook</a></li>
       <li class="contact-linkedin"><a href="//linkedin.com/in/serneum" target="_blank" title="Chris Rees on LinkedIn">LinkedIn</a></li>
     </ul>
     
