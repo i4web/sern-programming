@@ -100,10 +100,41 @@ If you would like to change the text that is overlayed over the Header image on 
 To change the number of projects that appear per page simply go to your admin dashboard and hover over the "Settings" link and click on "Reading". Change the "Blog pages show at most" value to your desired value.
 
 ## The JavaScript File
+Your websites main javascript file is located under the assets/js directory and titled _main.js. This file uses DOM-based routing to help fire the JavaScript only when needed. Background and creator of this method is listed in the files comments. Basically, it is a JSON with names that represent specific body classes and values consisting of your JS code.
 
-Your websites main javascript file is located under the assets/js directory and titled _main.js. This file uses DOM-based routing to help fire the JavaScript only when needed. Background and creator of this method is listed in the files comments. 
+Your JS file contains jQuery/JS code that handles smooth scrolling when following on page anchor links, triggering the radial progress bar, and adding brackets to the portofolio menu link.
 
-@TODO finish this description
+To fire JS on a specific page you will need to target the body class for that page by adding a name to the JSON. The theme will automatically add a class to your body tag that will be your page/project slug. Please note that all hyphens in the class must be changed to underscores in the JS (who-i-am becomes who_i_am).
+
+To give you an example, The archive page (aka your portfolio page) contains a class in the <body> called "archive". To target this specific I used the following code
+
+```  
+archive:{
+	  init: function(){
+      
+	  setActive();
+
+	  //Function to add the "active" class to the menu where the Walker class does not due to rewrites done to the CPT and Taxonomies.
+	  function setActive() {
+	    var path = window.location.pathname;
+		 
+		 //split the path name and grab the 2nd element in the array to search for the correct class 
+	    $('.menu-' + path.split("/")[2] ).addClass('active');
+		
+		}			  
+
+		
+	  }
+  }
+```
+
+To use JS on all pages you can place your JS code under the "common:" name. 
+
+```
+  common: {
+  
+  }
+```
 
 ## Support
 
