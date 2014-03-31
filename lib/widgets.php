@@ -5,6 +5,7 @@
 require_once('i4web-widget-github.php'); 
 require_once('i4web-widget-progress-bars.php');
 require_once('i4web-widget-toolbox.php');
+require_once('i4web-widget-radial-progress-bar.php');
  
 function i4web_widgets_init() {
   // Sidebars
@@ -16,6 +17,15 @@ function i4web_widgets_init() {
     'before_title'  => '<h3>',
     'after_title'   => '</h3>',
   ));
+  
+  register_sidebar(array(
+    'name'          => __('Strengths Area', 'i4web'),
+    'id'            => 'strengths-widget',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>',
+  ));  
   
   register_sidebar(array(
     'name'          => __('Home Page', 'i4web'),
@@ -40,6 +50,7 @@ function i4web_widgets_init() {
   register_widget('I4web_Github_Widget');
   register_widget('I4web_ProgressBar_Widget');
   register_widget('I4web_ToolBox_Widget');
+  register_widget('I4web_Radials_Widget');
   
 }
 add_action('widgets_init', 'i4web_widgets_init');

@@ -22,7 +22,7 @@ class I4web_ToolBox_Widget extends WP_Widget{
   */
   function __construct() {
 	  
-    $widget_ops = array('classname' => 'widget_i4web_toolbox', 'description' => __('Use this widget to add your Github Repo Listing', 'i4web'));
+    $widget_ops = array('classname' => 'widget_i4web_toolbox', 'description' => __('Use this widget your toolbox widget', 'i4web'));
 
     $this->WP_Widget('widget_i4web_toolbox', __('i4Web: Toolbox Widget', 'i4web'), $widget_ops);
     $this->alt_option_name = 'widget_i4web_toolbox';
@@ -53,7 +53,7 @@ class I4web_ToolBox_Widget extends WP_Widget{
     ob_start();
     extract($args, EXTR_SKIP);
 
-    $title = apply_filters('widget_title', empty($instance['title']) ? __('Github Repo', 'i4web') : $instance['title'], $instance, $this->id_base);
+    $title = apply_filters('widget_title', empty($instance['title']) ? __('Toolbox Widget', 'i4web') : $instance['title'], $instance, $this->id_base);
 
     foreach($this->fields as $name => $label) {
       if (!isset($instance[$name])) { $instance[$name] = ''; }
@@ -88,7 +88,7 @@ class I4web_ToolBox_Widget extends WP_Widget{
   } //end widget()
   
   /*
-   * Update the Github Repo Widget
+   * Update the Toolbox Widget
    */
   function update($new_instance, $old_instance){
     $instance = array_map('strip_tags', $new_instance);
