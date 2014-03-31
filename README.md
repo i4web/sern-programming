@@ -32,11 +32,15 @@ Your theme is equipped with 3 custom built widgets:
 * Progress Bars - Displays a language and a progress bar to display your strength in that language out of 100. Each value is customizable via the Widget interface.
 * Toolbox Widget - Display what is in your Developers toolbox made to look like separate arrays
 
-Settings for each of these widgets can also be edited through the "Widgets" page in the Administration panel.
+Settings for each of these widgets can also be edited through the "Widgets" page in the administration panel.
 
 ## Editing your Radial Progress Bars
 
-To edit your radial progress bars please visit the templates directory and edit home-strengths.php
+To add Radial Progress Bars to your website you'll want to visit the "Widgets" page in the administration panel and drag the "i4Web: Radials Widget" over to the "Strengths Area" area located on the right side of the page. 
+
+Once you've dragged the widget over go ahead and enter the values in for your radial bars. Please note that all values should not include a "%". The "%" is added automagically.
+
+Click save and check out your home page.
 
 ## Adding a New Project that is hosted on GitHub
 
