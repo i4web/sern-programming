@@ -28,9 +28,10 @@ Access your custom widgets area via your WordPress Administration panel. Hoverin
 
 Your theme is equipped with 3 custom built widgets:
 
-* GitHub - Simple widget to display your latest GitHub Repos
-* Progress Bars - Displays a language and a progress bar to display your strength in that language out of 100. Each value is customizable via the Widget interface.
-* Toolbox Widget - Display what is in your Developers toolbox made to look like separate arrays
+* GitHub - Simple widget to display your latest GitHub Repos. Just fill in the necessary info for the widget and you're all set.
+* Progress Bars - Displays a language and a progress bar to display your strength in that language out of 100. Each value is customizable via its Widget interface.
+* Toolbox Widget - Display what is in your Developers toolbox made to look like separate arrays. Visit the widget settings to configure your toolbox widget.
+* Radial Progress Bars - Show off your skills with easy to configure radial progress bars on the home page.
 
 Settings for each of these widgets can also be edited through the "Widgets" page in the administration panel.
 
