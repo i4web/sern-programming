@@ -141,7 +141,7 @@ function i4web_radials($instance){
   <div class="container">  <!-- Begin container -->
     <div class="col-sm-4 col-lg-4 sern-strengths-wrapper">  <!-- Begin sern-strengths-wrapper -->
 
-      <div class="radial-progress radial-a" data-strength="65" data-progress="0">  <!-- Begin Progress Bar -->
+      <div class="radial-progress radial-a" data-strength="<?php echo $radials_info['radial_val1'];?>" data-progress="0">  <!-- Begin Progress Bar -->
         <div class="circle">
           <div class="mask full">
             <div class="fill"></div>
@@ -158,14 +158,14 @@ function i4web_radials($instance){
 	  </div>  <!-- end Progress Bar -->
 
      <div class="sern-strengths-title">
-       <p>Game Development<p>
+       <p><?php echo $radials_info['radial_title1'];?><p>
      </div>
 
     </div> <!-- end sern-strengths-wrapper -->
 
     <div class="col-sm-4 col-lg-4 sern-strengths-wrapper">  <!-- Begin sern-strengths-wrapper -->
 
-      <div class="radial-progress radial-b" data-strength="20" data-progress="0">  <!-- Begin Progress Bar -->
+      <div class="radial-progress radial-b" data-strength="<?php echo $radials_info['radial_val2'];?>" data-progress="0">  <!-- Begin Progress Bar -->
         <div class="circle">
           <div class="mask full">
             <div class="fill"></div>
@@ -182,12 +182,12 @@ function i4web_radials($instance){
 	  </div>  <!-- end Progress Bar -->
 
      <div class="sern-strengths-title">
-       <p>Web Development<p>
+       <p><?php echo $radials_info['radial_title2'];?><p>
      </div>
 
     </div>  <!-- end sern-strengths-wrapper -->
     <div class="col-sm-4 col-lg-4 sern-strengths-wrapper">  <!-- Begin sern-strengths-wrapper -->
-      <div class="radial-progress radial-c" data-strength="90" data-progress="0">  <!-- Begin Progress Bar -->
+      <div class="radial-progress radial-c" data-strength="<?php echo $radials_info['radial_val3'];?>" data-progress="0">  <!-- Begin Progress Bar -->
         <div class="circle">
           <div class="mask full">
             <div class="fill"></div>
@@ -204,7 +204,7 @@ function i4web_radials($instance){
 	  </div>  <!-- end Progress Bar -->
 
      <div class="sern-strengths-title">
-       <p>Software Development<p>
+       <p><?php echo $radials_info['radial_title3'];?><p>
      </div>
     </div>   <!-- end sern-strengths-wrapper -->
   </div>  <!-- end container -->
