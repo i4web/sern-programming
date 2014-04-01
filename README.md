@@ -139,4 +139,4 @@ To use JS on all pages you can place your JS code under the "common:" name.
 
 ## Support
 
-Contact [i-4Web](http://www.i-4web.com/) to ask questions and get support.
+Contact [i-4Web](http://www.i-4web.com/) to ask questions and get support. Lets hack away at this too, hit us up with pull requests or feature ideas!
