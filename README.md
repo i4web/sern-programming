@@ -107,7 +107,7 @@ Your JS file contains jQuery/JS code that handles smooth scrolling when followin
 
 To fire JS on a specific page you will need to target the body class for that page by adding a name to the JSON. The theme will automatically add a class to your body tag that will be your page/project slug. Please note that all hyphens in the class must be changed to underscores in the JS (who-i-am becomes who_i_am).
 
-To give you an example, The archive page (aka your portfolio page) contains a class in the ``<body>`` tag called "archive". To target this specific I used the following code
+To give you an example, The archive page (aka your portfolio page) contains a class in the ``<body>`` tag called "archive". To target this specific class I used the following code
 
 ```  
 archive:{
