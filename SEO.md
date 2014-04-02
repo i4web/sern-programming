@@ -1,4 +1,4 @@
-# [Sern Programming Website Theme](http://www.sernprogramming.com/)
+## Basic SEO Instructions
 ========
 
 ### Editing your Default Facebook Metadata:
@@ -16,6 +16,14 @@
 4. Enter in custom Social data if necessary. This will override the data you setup for Google Search. Sometimes it comes in handy if you want to add a specific image sized to look good on Facebook timelines as well as Google+. Or if you just want to give it a different description.
 
 ### Editing your Portfolio Metadescription
+Since you Portfolio page is an archive listing of your Portfolio posts you'll need to go somewhere else in the SEO plugin to edit that description.
+
+To get to that setup you'll want to do the following:
+1. Hover over the SEO plugin and click on "Titles and Metas
+2. Click on the "Post Types" tab
+3. Scroll all the way down until you reach the Custom Post Type Archives
+4. Enter in your custome description and you'll be good to go
+
 
 
 ### Support
