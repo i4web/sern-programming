@@ -9,7 +9,7 @@
    function responsive_images($html, $id, $alt, $title, $align, $url, $size ) {
 	   $src = wp_get_attachment_url($id); // Grab the current image URL
 
-     if($url){ //Link attachem
+     if($url){ //If image is a link
        $html = '<a href="' . $src .  '" title="'.$title.'"><img class="img-responsive align'.$align.'" src="'.$src.'" alt="'.$alt.'"/></a>';
      }
      else{
