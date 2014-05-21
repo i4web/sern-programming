@@ -5,10 +5,17 @@
  
  //Automatically add Bootstrap responsive image class to images uploaded in the WP Editor
  
-add_filter( 'image_send_to_editor', 'responsive_images', 10, 7);
+ add_filter( 'image_send_to_editor', 'responsive_images', 10, 7);
    function responsive_images($html, $id, $alt, $title, $align, $url, $size ) {
-	   $url = wp_get_attachment_url($id); // Grab the current image URL
-	   $html = '<a href="' . $url .  '" class="" rel="your-rel"><img class="img-responsive" src="'.$url.'" /></a>';
+	   $src = wp_get_attachment_url($id); // Grab the current image URL
+
+     if($url){ //Link attachem
+       $html = '<a href="' . $src .  '" class="img-responsive align'.$align.'" title="'.$title.'"><img class="img-responsive align'.$align.'" src="'.$src.'" alt="'.$alt.'"/></a>';
+     }
+     else{
+       $html = '<img class="img-responsive align'.$align.'" src="'.$src.'" alt="'.$alt.'"/>';
+     }
+
 	   return $html;
    }
 
