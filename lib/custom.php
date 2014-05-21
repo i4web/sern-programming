@@ -10,7 +10,7 @@
 	   $src = wp_get_attachment_url($id); // Grab the current image URL
 
      if($url){ //Link attachem
-       $html = '<a href="' . $src .  '" class="img-responsive align'.$align.'" title="'.$title.'"><img class="img-responsive align'.$align.'" src="'.$src.'" alt="'.$alt.'"/></a>';
+       $html = '<a href="' . $src .  '" title="'.$title.'"><img class="img-responsive align'.$align.'" src="'.$src.'" alt="'.$alt.'"/></a>';
      }
      else{
        $html = '<img class="img-responsive align'.$align.'" src="'.$src.'" alt="'.$alt.'"/>';
