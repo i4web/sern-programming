@@ -4,16 +4,16 @@
  */
 
 /**
- * Github Repo Widget Class
+ * GitHub Repo Widget Class
  */
-class I4web_Github_Widget extends WP_Widget{
+class I4web_GitHub_Widget extends WP_Widget{
   private $fields = array(
     'title'                 => 'Widget Title',  
     'github_widget_lead_txt'       => 'Lead Text',
     'github_api_url'        => 'API Url',
     'github_transient_key'  => 'Transient Key',
-    'github_user_url'       => 'Github User URL'       
-     
+    'github_user_url'       => 'GitHub User URL',
+    'github_repo_blacklist'   => 'GitHub Repo Blacklist'
   );
   
   /**
@@ -21,9 +21,9 @@ class I4web_Github_Widget extends WP_Widget{
   */
   function __construct() {
 	  
-    $widget_ops = array('classname' => 'widget_i4web_github', 'description' => __('Use this widget to add your Github Repo Listing', 'i4web'));
+    $widget_ops = array('classname' => 'widget_i4web_github', 'description' => __('Use this widget to add your GitHub Repo Listing', 'i4web'));
 
-    $this->WP_Widget('widget_i4web_github', __('i4Web: Github', 'i4web'), $widget_ops);
+    $this->WP_Widget('widget_i4web_github', __('i4Web: GitHub', 'i4web'), $widget_ops);
     $this->alt_option_name = 'widget_i4web_github';
 
 	
@@ -52,7 +52,7 @@ class I4web_Github_Widget extends WP_Widget{
     ob_start();
     extract($args, EXTR_SKIP);
 
-    $title = apply_filters('widget_title', empty($instance['title']) ? __('Github Repo', 'i4web') : $instance['title'], $instance, $this->id_base);
+    $title = apply_filters('widget_title', empty($instance['title']) ? __('GitHub Repo', 'i4web') : $instance['title'], $instance, $this->id_base);
 
     foreach($this->fields as $name => $label) {
       if (!isset($instance[$name])) { $instance[$name] = ''; }
@@ -107,7 +107,7 @@ class I4web_Github_Widget extends WP_Widget{
   } //end widget()
   
   /*
-   * Update the Github Repo Widget
+   * Update the GitHub Repo Widget
    */
   function update($new_instance, $old_instance){
     $instance = array_map('strip_tags', $new_instance);
@@ -142,7 +142,7 @@ class I4web_Github_Widget extends WP_Widget{
   } // end form()
   
 	/**
-	* Get the users Github Repo Listing
+	* Get the users GitHub Repo Listing
 	* @todo set proper transient time
 	*/
 	function i4web_get_repos($instance) {
@@ -150,7 +150,7 @@ class I4web_Github_Widget extends WP_Widget{
 		$github = $instance;
 		$transient_key = $github['github_transient_key'];
 		$api_url = $github['github_api_url'];
-		
+		$blacklist = explode(",", $github['github_repo_blacklist']);
 	
 		 $repos = get_transient( $transient_key );
 		if ( false !== $repos )
@@ -163,6 +163,13 @@ class I4web_Github_Widget extends WP_Widget{
 		$repos = json_decode( wp_remote_retrieve_body( $response ) );
 		if ( ! is_array( $repos ) )
 			return array();
+
+                             for ($i = 0; $i < sizeof($repos); $i++) {
+                                  $repo_name = $repos[$i]->name;
+                                  if (in_array($repo_name, $blacklist)) {
+                                      unset($repos[$i]);
+                                  }
+                             }
 	
 		set_transient( $transient_key, $repos, 1 );
 		
@@ -170,6 +177,6 @@ class I4web_Github_Widget extends WP_Widget{
 		
 	} //end i4web_get_repos()
 	
-}  // End I4web_Github_Widget class
+}  // End I4web_GitHub_Widget class
 
 ?>
