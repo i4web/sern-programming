@@ -10,10 +10,10 @@
 .font-size(@sizeValue) {
   @remValue: @sizeValue;
   @pxValue: (@sizeValue * 10);
-  font-size: ~"@{pxValue}px"; 
+  font-size: ~"@{pxValue}px";
   font-size: ~"@{remValue}rem";
 }
-	 
+
 
 
 /* ==========================================================================
@@ -22,7 +22,7 @@
 body,html { height: 100%; }
 
 body{
-  font-family: @project-font-main;	
+  font-family: @project-font-main;
   line-height: 1.6;
 }
 
@@ -31,23 +31,23 @@ body{
 /* ==========================================================================
    Typography
    ========================================================================== */
-h1,h2,h3,h4,h5,h6{ 
-  color: @project-orange; 
+h1,h2,h3,h4,h5,h6{
+  color: @project-orange;
   font-family: @project-font-headings;
-}   
-   
+}
+
 .text-orange{	color: @project-orange;}
 
 
 blockquote{
-  background-color: #F2F2F2;	
-  border-color: #7bb4d9;	
+  background-color: #F2F2F2;
+  border-color: #7bb4d9;
 }
 
 blockquote p{
   color: #7C7C7C;
   font-style: italic;
-  font-weight: 300;	
+  font-weight: 300;
 }
 
 /* ==========================================================================
@@ -57,7 +57,7 @@ blockquote p{
 
 .btn-blue{
   background-color: @project-medium-blue;
-  border-color: @project-dark-blue;	
+  border-color: @project-dark-blue;
   color: #FFF;
 }
 
@@ -67,23 +67,23 @@ blockquote p{
 }
 
 .btn-orange:hover{
-  color: @project-medium-blue;  	
+  color: @project-medium-blue;
 }
 
 
 /* ==========================================================================
    Navbar Styling
    ========================================================================== */
-.navbar{ 
+.navbar{
   border: none !important;
   margin-bottom: 0px !important;
-  
+
 }
 
 .navbar-default{ background-color: @project-medium-blue; }
 
 .navbar-nav { float: right; }
-   
+
 .navbar-default .navbar-brand {
   color: #FFF;
 }
@@ -91,7 +91,7 @@ blockquote p{
 .navbar-brand{
  font-family: 'Marcellus SC', serif;
  font-size: 30px;
- font-weight: bold;	
+ font-weight: bold;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -100,8 +100,8 @@ blockquote p{
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
   background-color: inherit;
-  
-  color: #FFFFFF;	
+
+  color: #FFFFFF;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
@@ -110,7 +110,7 @@ blockquote p{
 
 .navbar-nav>.active>a:before,
 .navbar-nav>.active>a:after{
-  color: @project-orange;	
+  color: @project-orange;
 }
 
 .navbar-nav>.active>a:before {
@@ -124,15 +124,15 @@ blockquote p{
 }
 
 .navbar-default .navbar-brand{
-  color: @project-orange;	
+  color: @project-orange;
 }
 
 .navbar-default .navbar-brand:hover{
-  color: #FFF;	
+  color: #FFF;
 }
 
 .navbar-default .navbar-brand:focus{
-  color: @project-orange;	
+  color: @project-orange;
 }
 
 /* ==========================================================================
@@ -144,36 +144,36 @@ blockquote p{
   background-color: @project-orange;
   border-radius: 0px;
   height: 50px;
-  float: right;	
+  float: right;
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
-  background-color: @project-dark-blue;	
+  background-color: @project-dark-blue;
 }
 
 .navbar-toggle{
-  margin: 0px;	
+  margin: 0px;
 }
 
 .navbar-toggle .icon-bar{
   width: 42px;
-  height: 3px;	
+  height: 3px;
   margin: 0 auto;
 }
 
 .navbar-default .navbar-toggle .icon-bar{
-  background-color: #FFF;	
+  background-color: #FFF;
 }
 
 .navbar-collapse{
-  background-color: @project-dark-blue;  
+  background-color: @project-dark-blue;
   border-top: none;
   float:none;
-  text-align: center;	
+  text-align: center;
 }
 
-.navbar-nav{	
-  text-align: center;	
+.navbar-nav{
+  text-align: center;
   float: none;
 }
 
@@ -186,7 +186,7 @@ blockquote p{
   min-width: 100%;
 }
 
-.header-img { 
+.header-img {
   background-image: url('../img/sern-main-img.jpg');
   height: 100%;
   background-size: auto 100%;
@@ -195,14 +195,14 @@ blockquote p{
 }
 
 .header-overlay{
-  background-color: rgba(0,0,0,0.6);	
+  background-color: rgba(0,0,0,0.6);
 }
 
 .header-copy{
   margin-top: 20px;
   color: #FFF;
   .font-size(2);
-  position: absolute;	
+  position: absolute;
   text-align: center;
   top: 25%;
   width: 100%;
@@ -217,7 +217,7 @@ blockquote p{
   .font-size(2);
   height: 125px;
   margin: 0 auto;
-  margin-top: 10%;	
+  margin-top: 10%;
   width: 125px;
 
 }
@@ -228,15 +228,15 @@ blockquote p{
   height: 100px;
   margin: 0 auto;
   margin-top: 13px;
-  width: 100px;  
+  width: 100px;
 }
 
 .header-scroll a{
   color: #FFF;
-  display: block; 
+  display: block;
   height: 100px;
   padding-top: 25px;
-  text-decoration: none;   
+  text-decoration: none;
   width: 100px;
 }
 
@@ -254,12 +254,12 @@ blockquote p{
 .sern-widget-area,
 .sern-strengths-area{
   padding-top: 50px;
-  padding-bottom: 50px;	
+  padding-bottom: 50px;
 }
 
 .sern-widget-area h2,
 .sern-strengths-area h2{
-  color: @project-orange;	
+  color: @project-orange;
 }
 
 .sern-widget-wrapper,
@@ -272,7 +272,7 @@ blockquote p{
 
 }
 .sern-widget-header{
-  background-color: @project-medium-blue;	
+  background-color: @project-medium-blue;
   padding: 5px 0 5px 20px;
   width: 100%;
 }
@@ -282,13 +282,13 @@ blockquote p{
 }
 
 .sern-widget-header h4{
-  color: #FFF;	
+  color: #FFF;
   font-weight: 300;
 }
 
 .sern-widget-content{
   background-color: #FFF;
-  margin: 8px 8px 0 8px;	
+  margin: 8px 8px 0 8px;
   padding: 10px 0 10px 10px;
 }
 
@@ -300,7 +300,7 @@ blockquote p{
 }
 
 .sern-widget-btn{
-  padding: 5px;	
+  padding: 5px;
 }
 
 .sern-strengths-title{
@@ -311,7 +311,7 @@ blockquote p{
 }
 
 .strengths-cta-wrap{
-  padding-top: 50px;	
+  padding-top: 50px;
 }
 
 .sern-github-repo-list,
@@ -322,14 +322,14 @@ blockquote p{
 }
 
 .sern-toolbox-list kbd {
-  font-size: 80%;	
+  font-size: 80%;
 }
 
 .sern-toolbox-list {
   width: 100%;
 }
 
-.sern-github-repo-list li , 
+.sern-github-repo-list li ,
 .sern-languages-list li,
 .sern-toolbox-list li{
   border-bottom: 1px solid #e6e6e6;
@@ -338,13 +338,13 @@ blockquote p{
 }
 
 .sern-github-repo-list li:first-child{
-  padding-top: 0px;	
+  padding-top: 0px;
 }
 
 .sern-github-repo-list li:last-child,
 .sern-languages-list li:last-child,
 .sern-toolbox-list li:last-child{
-  border-bottom: 0px;	
+  border-bottom: 0px;
 }
 
 .sern-github-repo-list li:before{
@@ -355,7 +355,7 @@ blockquote p{
   text-indent: 6px;
   vertical-align: middle;
   background: url('../img/sprite.png') -47px -151px no-repeat;
-  content: "";	
+  content: "";
 }
 
 .sern-github-meta {
@@ -365,11 +365,11 @@ blockquote p{
 }
 
 .sern-github-meta .badge{
-  background-color: @project-light-blue;	
+  background-color: @project-light-blue;
 }
 
 .sern-github-meta a{
-  color: #8A8A8A;	
+  color: #8A8A8A;
 }
 
 .sern-languages-list progress[value] {
@@ -391,7 +391,7 @@ blockquote p{
   background-image:
 	   -webkit-linear-gradient(top, rgba(101, 190, 112, .25),rgba(109, 205, 121, .25)),
 	   -webkit-linear-gradient(left, #65be70, #6dcd79);
-    border-radius: 2px; 
+    border-radius: 2px;
     background-size: 35px 20px, 100% 100%, 100% 100%;
 }
 
@@ -407,7 +407,7 @@ blockquote p{
 }
 
 .sern-gravatar small{
-  font-style: italic;	
+  font-style: italic;
 }
 
 .sern-resume-wrapper{
@@ -415,7 +415,7 @@ blockquote p{
   min-height: 75px;
   padding-bottom: 25px;
   padding-top: 25px;
-  text-align: center;	
+  text-align: center;
 }
 
 /* ==========================================================================
@@ -441,20 +441,20 @@ blockquote p{
 
 
 .sern-stats h2{
-  color: @project-light-blue;	
+  color: @project-light-blue;
 }
 
 .sern-stats small{
-  font-size: 15px;	
+  font-size: 15px;
   font-weight: 100;
 }
 
 .pager{
-  padding-left: 15px;	
+  padding-left: 15px;
 }
 
 .pager .previous>a, .pager .previous>span, .pager .next>a, .pager .next>span{
-  margin-top: 15px;	
+  margin-top: 15px;
 }
 
 
@@ -495,6 +495,10 @@ blockquote p{
 .hentry .entry-content { }
 .hentry footer { }
 
+article.i4web_portfolio {
+  min-height: 63vh;
+}
+
 
 
 /* ==========================================================================
@@ -503,34 +507,34 @@ blockquote p{
 footer{
   color: #FFF;
   padding-top: 20px;
-  min-height: 200px;	
+  min-height: 200px;
 }
 
 .content-info{
-  background-color: @project-medium-blue;	
+  background-color: @project-medium-blue;
 }
 
 footer h4{
-  color: @project-orange;	
+  color: @project-orange;
 }
 
 .sern-contact-list{
   width: 300px;
-  margin: 0 auto;	
+  margin: 0 auto;
 }
 
 .sern-contact-list li{
-  float: left;	
+  float: left;
   height: 50px;
   list-style: none;
   margin: 15px;
   width: 50px;
-  
+
   -webkit-transition: all .5s ease-in-out;
   -moz-transition: all .5s ease-in-out;
   -ms-transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;  
+  transition: all .5s ease-in-out;
 }
 
 .sern-contact-list a {
@@ -541,35 +545,35 @@ footer h4{
 }
 
 .contact-github{
-  background: url('../img/sprite.png') -31px -8px no-repeat;	
+  background: url('../img/sprite.png') -31px -8px no-repeat;
 }
 
 .contact-github:hover{
-  background: url('../img/sprite.png') -31px -74px no-repeat;	
+  background: url('../img/sprite.png') -31px -74px no-repeat;
 }
- 
+
 .contact-facebook{
-  background: url('../img/sprite.png') -124px -8px no-repeat;	
+  background: url('../img/sprite.png') -124px -8px no-repeat;
 }
 
 .contact-facebook:hover{
-  background: url('../img/sprite.png') -124px -73px no-repeat;	
+  background: url('../img/sprite.png') -124px -73px no-repeat;
 }
 
 .contact-linkedin{
-  background: url('../img/sprite.png') -212px -8px no-repeat;	
+  background: url('../img/sprite.png') -212px -8px no-repeat;
 }
 
 .contact-linkedin:hover{
-  background: url('../img/sprite.png') -212px -73px no-repeat;	
+  background: url('../img/sprite.png') -212px -73px no-repeat;
 }
 
 .copyright {
   padding-top: 50px;
   .font-size(1.3);
   text-align: center;
-}   
-   
+}
+
 .content-info { }
 
 /* ==========================================================================
@@ -577,16 +581,16 @@ footer h4{
    ========================================================================== */
 .pager li>a, .pager li>span{
   background-color: @project-orange;
-  color: #FFF;	
+  color: #FFF;
 }
 
 .pager li>a:hover, .pager li>span:hover{
   background-color: @project-medium-blue;
-  color: @project-orange;	
+  color: @project-orange;
 }
 
 .pager:before{
-  clear: both;	
+  clear: both;
 }
 
 
@@ -596,8 +600,8 @@ footer h4{
    ========================================================================== */
 
 .aligncenter { display: block; margin: 0 auto; }
-.alignleft { 
-  float: left; 
+.alignleft {
+  float: left;
   margin: 0px 25px 0 10px;
 }
 .alignright { float: right; }
@@ -612,11 +616,11 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 @media (min-width: @screen-sm-min) {
 .header-copy{
 
-  .font-size(2.5);	
+  .font-size(2.5);
 }
 .header-copy .text-large{
   .font-size(6.5);
-}	
+}
 
 .sern-widget-wrapper,
 .sern-strengths-area{
@@ -626,22 +630,22 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 
 @media (min-width: @screen-md-min) {
 
-.header-img { 
+.header-img {
   background-size: 100% 100%;
 }
 
 .navbar-collapse{
-  background-color: @project-medium-blue;  
+  background-color: @project-medium-blue;
 }
 
-.navbar-nav{	
-  text-align: center;	
+.navbar-nav{
+  text-align: center;
   float: right;
 }
 
 .header-copy{
 bottom: 0px;
-  .font-size(3.3);	
+  .font-size(3.3);
 }
 .header-copy .text-large{
   .font-size(8.5);
@@ -649,8 +653,8 @@ bottom: 0px;
 
 .sern-widget-area,
 .sern-strengths-area{
- padding: 50px;	
-}	
+ padding: 50px;
+}
 
 .sern-stats {
   width: 300px;
@@ -658,21 +662,21 @@ bottom: 0px;
 
 .sern-stats li{
   float: left;
-  width: 100px;	
-} 
+  width: 100px;
+}
 
 .sern-stats li:hover{
   border-bottom: 2.5px solid @project-orange;
-  border-radius: 1px;	
+  border-radius: 1px;
 }
 
 .sern-languages-list progress[value] {
-  padding-right: 8px;  
+  padding-right: 8px;
   width: 200px;
 }
 
 
-	
+
 }
 
 @media (min-width: @screen-lg-min) { }
