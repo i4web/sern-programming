@@ -16,8 +16,8 @@
 ?>
 
 <?php while (have_posts()) : the_post(); ?>
-  <?php include(locate_template('templates/content.php'));  //using locate_template allows us to pass in the $sern_repos variable ?>
-<?php endwhile; ?>
+    <?php include(locate_template('templates/content-blog.php'));  //using locate_template allows us to pass in the $sern_repos variable ?>
+  <?php endwhile; ?>
 
 <?php if ($wp_query->max_num_pages > 1) : ?>
   <nav class="post-nav">
