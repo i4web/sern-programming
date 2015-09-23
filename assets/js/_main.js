@@ -134,7 +134,7 @@ var I4web = {
 	    var path = window.location.pathname;
 		 
 		 //split the path name and grab the 2nd element in the array to search for the correct class 
-	    $('.menu-' + path.split("/")[2] ).addClass('active');
+	    $('.menu-' + path.split("/")[1] ).addClass('active');
 		
 		}			  
 
