@@ -124,22 +124,20 @@ var I4web = {
     }
   },
   
-  archive:{
-	  init: function(){
+  archive: {
+	  init: function() {
       
-	  setActive();
+	      setActive();
 
-	  //Function to add the "active" class to the menu where the Walker class does not due to rewrites done to the CPT and Taxonomies.
-	  function setActive() {
-	    var path = window.location.pathname;
-		 
-		 //split the path name and grab the 2nd element in the array to search for the correct class 
-	    $('.menu-' + path.split("/")[1] ).addClass('active');
+	      //Function to add the "active" class to the menu where the Walker class does not due to rewrites done to the CPT and Taxonomies.
+	      function setActive() {
+	          var path = window.location.pathname;
+                  // Split the path name, strip out the empty values, and grab the 1st element in the array to search for the correct class 
+                  var pathArray = path.split("/").filter(Boolean);
+                  $('.menu-' + path.split("/")[0] ).addClass('active');
 		
-		}			  
-
-		
-	  }
+              }			  	
+	 }
   }
 };
 
