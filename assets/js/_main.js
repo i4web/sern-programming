@@ -117,29 +117,11 @@ var I4web = {
 	  
     }
   },
-  // About us page, note the change from about-us to about_us.
-  about_us: {
-    init: function() {
-      // JavaScript to be fired on the about us page
-    }
-  },
-  
-  archive:{
-	  init: function(){
-      
-	  setActive();
 
-	  //Function to add the "active" class to the menu where the Walker class does not due to rewrites done to the CPT and Taxonomies.
-	  function setActive() {
-	    var path = window.location.pathname;
-		 
-		 //split the path name and grab the 2nd element in the array to search for the correct class 
-	    $('.menu-' + path.split("/")[2] ).addClass('active');
-		
-		}			  
-
-		
-	  }
+  single_i4web_portfolio: {
+      init: function() {
+          $('.menu-portfolio').addClass('active');
+      }
   }
 };
 
