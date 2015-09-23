@@ -125,19 +125,23 @@ var I4web = {
   },
   
   archive: {
-	  init: function() {
-      
-	      setActive();
+      init: function() {
+          $('menu-portfolio').addClass('active');
+          $('menu-blog').removeClass('active');
+      }
+  },
 
-	      //Function to add the "active" class to the menu where the Walker class does not due to rewrites done to the CPT and Taxonomies.
-	      function setActive() {
-	          var path = window.location.pathname;
-                  // Split the path name, strip out the empty values, and grab the 1st element in the array to search for the correct class 
-                  var pathArray = path.split("/").filter(Boolean);
-                  $('.menu-' + path.split("/")[0] ).addClass('active');
-		
-              }			  	
-	 }
+  blog: {
+      init: function() {
+          $('.menu-blog').addClass('active');
+      }
+  },
+
+  single_i4web_portfolio: {
+      init: function() {
+          $('.menu-portfolio').addClass('active');
+          $('.menu-blog').removeClass('active');
+      }
   }
 };
 
