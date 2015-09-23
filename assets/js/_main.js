@@ -117,30 +117,10 @@ var I4web = {
 	  
     }
   },
-  // About us page, note the change from about-us to about_us.
-  about_us: {
-    init: function() {
-      // JavaScript to be fired on the about us page
-    }
-  },
-  
-  archive: {
-      init: function() {
-          $('menu-portfolio').addClass('active');
-          $('menu-blog').removeClass('active');
-      }
-  },
-
-  blog: {
-      init: function() {
-          $('.menu-blog').addClass('active');
-      }
-  },
 
   single_i4web_portfolio: {
       init: function() {
           $('.menu-portfolio').addClass('active');
-          $('.menu-blog').removeClass('active');
       }
   }
 };
