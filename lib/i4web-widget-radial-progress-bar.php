@@ -136,7 +136,7 @@ function i4web_radials($instance){
 <!-- Begin Radials HTML -->
   <h2 class="text-center">my.Strengths();</h2>
 
-  <p class="lead text-center">Knight Rider, a shadowy flight into the dangerous world of a man who does not exist. </p>
+  <p class="lead text-center">I have a thing! It's like a plan, but with more greatness.</p>
 
   <div class="container">  <!-- Begin container -->
     <div class="col-sm-4 col-lg-4 sern-strengths-wrapper">  <!-- Begin sern-strengths-wrapper -->
