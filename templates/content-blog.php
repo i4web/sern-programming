@@ -91,7 +91,7 @@ $repoURL = '';
     <div class="sern-widget-btn text-center">
       <a href="<?php the_permalink();?>" class="btn btn-orange">View Project</a>
     </div>
-       <? } ?>
+       <?php } ?>
 
 </article>
 
