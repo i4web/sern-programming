@@ -21,9 +21,9 @@ function i4web_portfolio_shortcode(){
  *
  */
 function i4web_portfolio(){
-  printf(__('<div class="i4web-portfolio-wrapper">'));
+  printf(__('<div class="i4web-portfolio-wrapper col-sm-12">'));
 
-  echo '<div class="button-group filter-button-group">
+  echo '<div class="button-group filters-button-group">
   <a href="#" class="btn btn-orange" data-filter="*">show all</a>
   <a href="#" class="btn btn-orange" data-filter=".category1">Category 1</a>
   <a href="#" class="btn btn-orange" data-filter=".category2">Category 2</a>
@@ -32,13 +32,13 @@ function i4web_portfolio(){
 </div>';
 
   echo '<div class="grid">
-  <div class="element-item category1">Category 1</div>
-  <div class="element-item category2">Category 2</div>
-  <div class="element-item category3">Category 3</div>
-  <div class="element-item category4">Category 4</div>
-  <div class="element-item category3">Category 3</div>
-  <div class="element-item category1">Category 1</div>
-  <div class="element-item category2">Category 2</div>
+  <div class="col-md-6 col-lg-4 element-item category1">Category 1</div>
+  <div class="col-md-6 col-lg-4 element-item category2">Category 2</div>
+  <div class="col-md-6 col-lg-4 element-item category3">Category 3</div>
+  <div class="col-md-6 col-lg-4 element-item category4">Category 4</div>
+  <div class="col-md-6 col-lg-4 element-item category3">Category 3</div>
+  <div class="col-md-6 col-lg-4 element-item category1">Category 1</div>
+  <div class="col-md-6 col-lg-4 element-item category2">Category 2</div>
   ...
 </div>
       ';
