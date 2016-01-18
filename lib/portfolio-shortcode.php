@@ -51,9 +51,14 @@ function i4web_portfolio(){
     }
     echo '</div>'; //end .button-group
 
+    //Set the paged parameter
+    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
     //Args to query the portfolio posts
     $args = array(
-	'post_type' => 'i4web_portfolio'
+	'post_type'         => 'i4web_portfolio',
+    'posts_per_page'    => 20,
+    'paged'             => $paged
     );
 
     $query = new WP_Query( $args );
@@ -61,18 +66,47 @@ function i4web_portfolio(){
     echo '<div class="grid">';
 
     // The Portfolio Loop
-    while ( $query->have_posts() ) {
-    	$query->the_post();
+    while ( $query->have_posts() ) : the_post();
+        $query->the_post();
 
         $terms = wp_get_post_terms( get_the_ID(), 'type' );
 
         //store the name of the first taxonomy type assigned to the portofolio item
         $portfolioTerm = sanitize_title($terms[0]->name);
 
-        echo '<div class="col-md-6 col-lg-4 element-item '.$portfolioTerm.'">'.get_the_title().'</div>';
-    }
+        echo '<div class="col-md-6 col-lg-4 element-item '.$portfolioTerm.'">';
+        echo '<div class="portfolio-item-wrapper">';
+        echo '<figure class="thumbnail_portfolio">';
+        echo '<a href="'.get_the_permalink().'">';
+        //display the post thumbnail if available
+        if ( has_post_thumbnail() ){
+            the_post_thumbnail( array(600, 350), array( 'class' => 'img-responsive sern-feat-img' ) );
+        }
+        else{ //display the default featured image if a featured image has not been set
+            echo '<img src="'.get_stylesheet_directory_uri().'/assets/img/source-code.jpg" class="img-responsive sern-feat-img wp-post-image"/>';
+        }
+        echo '</a>';
+        echo '</figure>';
+        echo '<h4 class="portfolio-link"><a href="'.get_the_permalink().'">'.get_the_title().'</a></h4>';
+        echo '</div>'; //end .portfolio-item-wrapper
+        echo '<div class="portfolio-spacer"></div>';
+        echo '</div>';
+    endwhile; // End of the loop.
+
 
     echo '</div>'; //end .grid
+
+    // next_posts_link() usage with max_num_pages
+    echo '<div class="pagination">
+            <ul>';
+    echo '<li>';
+    next_posts_link( 'Older Projects', $query->max_num_pages );
+    echo '</li>';
+    echo '<li>';
+    previous_posts_link( 'Newer Projects' );
+    echo '</li>';
+    echo '  </ul>
+          </div>'; //end .pagination
 
     /* Restore original Post Data
      * NB: Because we are using new WP_Query we aren't stomping on the
@@ -83,6 +117,7 @@ function i4web_portfolio(){
     wp_reset_postdata();
 
     printf(__('</div>')); //end .i4web-portfolio-wrapper
+
 
 }
 
