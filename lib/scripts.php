@@ -11,7 +11,7 @@
  * 3. /theme/assets/js/main.min.js (in footer)
  */
 function i4web_scripts() {
-  wp_enqueue_style('i4web_main', get_template_directory_uri() . '/assets/css/main.min.css', false, 'e22c83c14a81176ad6f82ee3fcce3726');
+  wp_enqueue_style('i4web_main', get_template_directory_uri() . '/assets/css/main.min.css', false, '3d57a44f181b903c31d76d18edf06a41');
 
   // jQuery is loaded using the same method from HTML5 Boilerplate:
   // Grab Google CDN's latest jQuery with a protocol relative URL; fallback to local if offline
@@ -27,12 +27,16 @@ function i4web_scripts() {
   }
 
   wp_register_script('modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.7.0.min.js', array(), null, false);
-  wp_register_script('i4web_scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', array(), 'd25ca60a00c137bf08941844f4e30fa4', true);
+  wp_register_script('i4web_scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', array(), '6360bdf1af940a13304d17ac10e706ff', true);
+  wp_register_script('isotope' , '//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js', array(), null, false);
   wp_register_script('i4web_mainjs', get_template_directory_uri() . '/assets/js/_main.js', array(), null, true);
+
   wp_enqueue_script('modernizr');
   wp_enqueue_script('jquery');
   wp_enqueue_script('i4web_scripts');
+  wp_enqueue_script('isotope');
   wp_enqueue_script('i4web_mainjs');
+
 }
 add_action('wp_enqueue_scripts', 'i4web_scripts', 100);
 

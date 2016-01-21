@@ -1,7 +1,7 @@
 <?php get_template_part('templates/head'); ?>
 <body <?php body_class(); ?>>
 
-  <!--[if lt IE 8]>
+  <!--[if lt IE 9]>
     <div class="alert alert-warning">
       <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'i4web'); ?>
     </div>
@@ -16,11 +16,11 @@
       get_template_part('templates/header');
     }
   ?>
-   
-   <?php get_template_part('templates/home-header'); //Display the Header for the home page ?> 
-   <?php get_template_part('templates/home-strengths'); //Display the Strengths area ?> 
+
+   <?php get_template_part('templates/home-header'); //Display the Header for the home page ?>
+   <?php get_template_part('templates/home-strengths'); //Display the Strengths area ?>
    <?php get_template_part('templates/home-widgets'); //Display the Home Page Widgets ?>
-   
+
 
 
   <div class="wrap container" role="document">
