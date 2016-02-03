@@ -9,7 +9,7 @@
     echo '<p class="text-center">Here you will find examples of my work past, present, and maybe even the future!</p>';
   }
   elseif (get_post_type( $post ) == 'post'){
-    echo '<p class="text-center">Blog Description Goes Here!</p>';
+    echo '<p class="text-center">This is the dimension of imagination. It is an area which we call the Twilight Zone.</p>';
   }
   elseif(is_tax()){  //Taxonomy archive pages
 

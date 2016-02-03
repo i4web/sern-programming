@@ -7,9 +7,6 @@
     "type": "git",
     "url": "git://github.com/i4web/i4Web-wp"
   },
-  "bugs": {
-    "url" : ""
-  },
   "licenses": [{
     "type": "MIT",
     "url": "http://opensource.org/licenses/MIT"
