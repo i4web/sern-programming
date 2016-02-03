@@ -70,9 +70,12 @@ function i4web_portfolio(){
         $query->the_post();
 
         $terms = wp_get_post_terms( get_the_ID(), 'type' );
+        $termCount = count($terms);
 
-        //store the name of the first taxonomy type assigned to the portofolio item
-        $portfolioTerm = sanitize_title($terms[0]->name);
+        //Loop through the terms associated with this portfolio post
+        foreach ($terms as $term){
+            $portfolioTerm .= sanitize_title($term->name) .' '; //store the names into a string separated by a space
+        }
 
         echo '<div class="col-md-6 col-lg-4 element-item '.$portfolioTerm.'">';
         echo '<div class="portfolio-item-wrapper">';
@@ -91,6 +94,8 @@ function i4web_portfolio(){
         echo '</div>'; //end .portfolio-item-wrapper
         echo '<div class="portfolio-spacer"></div>';
         echo '</div>';
+
+        $portfolioTerm = ''; //reset the Portfolio Term string to avoid a long string of all terms for each portfolio.
     endwhile; // End of the loop.
 
 
